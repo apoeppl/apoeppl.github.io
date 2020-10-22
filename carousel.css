@@ -34,6 +34,22 @@ body {
   height: 32rem;
 }
 
+.actorgraph {
+  position: absolute;
+  right: -10%;
+  bottom: -50%;
+  width: 40%;
+  height: 0;
+  opacity: 0.4;
+  padding: 0;
+  padding-bottom: calc(100% * 0.5);
+  background: url(actorgraph.svg) no-repeat top left;
+  background-size: contain; 
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
