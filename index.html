@@ -45,52 +45,54 @@
 </head>
 
 <body>
-    <div class="bibtex_template" callback="debugBibTexElement(bibtexentry)" >
-        <span class="if BIBTEXTYPEKEY==INPROCEEDINGS || BIBTEXTYPEKEY==ARTICLE">
-            <p class="font-weight-bold">
-                <span class="title"></span>
-            <ul>
-                <li>
-                    <span class="author"/>
-                </li>
-                <li>
-                    <span>
-                        <span class="if booktitle">
-                            <span class="booktitle"/>
-                        </span>
-                    </span>
-                    <span>
-                        <span class="if journal">
-                            <span class="journal"/>
-                        </span>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <span class="if month">
-                            <span class="month"></span>.
-                        </span>
-                    </span>
-                    <span>
-                        <span class="year"/>
-                    </span>
-                </li>
-                <span class="if doi">
+    <div class="invisible">
+        <div class="bibtex_template" callback="debugBibTexElement(bibtexentry)" >
+            <span class="if BIBTEXTYPEKEY==INPROCEEDINGS || BIBTEXTYPEKEY==ARTICLE">
+                <p class="font-weight-bold">
+                    <span class="title"></span>
+                <ul>
                     <li>
-                    <span class="font-weight-bold">DOI:</span> 
-                    <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
-                        <span class="doi"></span>
-                    </a>
+                        <span class="author"/>
                     </li>
-                </span>
-            </ul>
-            </p>
-        </span>
-    </div>
-    <div class="bibtex_structure">
-        <div class="sort year" extra="DESC date">
-            <div class="templates"></div>
-        </div>    
+                    <li>
+                        <span>
+                            <span class="if booktitle">
+                                <span class="booktitle"/>
+                            </span>
+                        </span>
+                        <span>
+                            <span class="if journal">
+                                <span class="journal"/>
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <span class="if month">
+                                <span class="month"></span>.
+                            </span>
+                        </span>
+                        <span>
+                            <span class="year"/>
+                        </span>
+                    </li>
+                    <span class="if doi">
+                        <li>
+                        <span class="font-weight-bold">DOI:</span> 
+                        <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
+                            <span class="doi"></span>
+                        </a>
+                        </li>
+                    </span>
+                </ul>
+                </p>
+            </span>
+        </div>
+        <div class="bibtex_structure">
+            <div class="sort year" extra="DESC date">
+                <div class="templates"></div>
+            </div>    
+        </div>
     </div>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -103,6 +105,9 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <!--<li class="nav-item">
                         <a class="nav-link" href="#">Photography</a>
@@ -123,7 +128,7 @@
                 <h1 class="display-4 font-weight-normal">Alexander Pöppl, M.Sc.</h1>
                 <!--<p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>-->
                 <a class="btn btn-outline-secondary" href="cv-apoeppl.pdf">Resume (en)</a>
-                <!--<a class="btn btn-outline-secondary" href="poeppl_cv_ger.pdf">Lebenslauf (ger)</a>-->
+                <a class="btn btn-outline-secondary" href="cv-apoeppl-ger.pdf">Lebenslauf (ger)</a>
             </div>
             <div class="actorgraph"></div>
             <!--<div class="actorgraph product-device-2 shadow-sm d-none d-md-block"></div>-->
@@ -200,7 +205,7 @@
         <!-- FOOTER -->
         <footer class="container">
             <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2020 Alexander Pöppl.</p><!-- &middot; <a href="#">Privacy/Impressum</a></p>-->
+            <p>&copy; 2020 Alexander Pöppl.</p><!-- &middot; <a href="#">Privacy/Impressum</a></p>-->
         </footer>
     </main>
 </body>
